@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/singup.css') }}">
+
+    <title>Registration</title>
+</head>
+<body>
+
+    <!-- <script src="{{ url_for('static', filename='js/autchscript.js') }}"></script> -->
+
+
+<center>
+    <div class="register-window">
+        <form action="/singup" method="POST">
+            <h2>Sing Up</h2>
+
+            <div>
+                <input id="username", name="username" type="text" maxlength="32" placeholder="username">
+
+                <input id="email" name="email" type="email" maxlength="32" placeholder="email">
+
+                <input id="password" name="password" type="password" maxlength="32" placeholder="password">
+                <i class="error-messages", id="error-messages"></i>
+
+                <button id="btn_send" name="btn_send" type="submit">Sing up</button>
+            </div>
+        </form>
+
+    </div>    
+
+</center>
+
+
+</body>
+</html>
